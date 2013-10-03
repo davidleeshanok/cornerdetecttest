@@ -55,7 +55,11 @@ int main(int argc, const char * argv[])
     //Draw the points on the image
     drawOnImage(tableImage, pts);
     
-    //Display image in window
+    //Display unedited image in window
+    cv::namedWindow("Regular Table");
+    cv::imshow("Regular Table", unconvertedTableImage);
+    
+    //Display overlayed image in window
     cv::namedWindow("Table Corners");
     cv::imshow("Table Corners", tableImage);
     
