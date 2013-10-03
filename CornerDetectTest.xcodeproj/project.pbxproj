@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		6328072C17FD16AB0030F4C9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6328072B17FD16AB0030F4C9 /* main.cpp */; };
 		6328072E17FD16AB0030F4C9 /* CornerDetectTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6328072D17FD16AB0030F4C9 /* CornerDetectTest.1 */; };
+		6328073617FD25EF0030F4C9 /* libopencv_core.2.4.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6328073417FD25EF0030F4C9 /* libopencv_core.2.4.6.dylib */; };
+		6328073917FD26080030F4C9 /* libopencv_video.2.4.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6328073817FD26080030F4C9 /* libopencv_video.2.4.6.dylib */; };
+		6328073B17FD26390030F4C9 /* libopencv_highgui.2.4.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6328073A17FD26390030F4C9 /* libopencv_highgui.2.4.6.dylib */; };
+		6328073D17FD27480030F4C9 /* libopencv_imgproc.2.4.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6328073C17FD27480030F4C9 /* libopencv_imgproc.2.4.6.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,11 @@
 		6328072817FD16AB0030F4C9 /* CornerDetectTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CornerDetectTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6328072B17FD16AB0030F4C9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6328072D17FD16AB0030F4C9 /* CornerDetectTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CornerDetectTest.1; sourceTree = "<group>"; };
+		6328073417FD25EF0030F4C9 /* libopencv_core.2.4.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_core.2.4.6.dylib; sourceTree = "<group>"; };
+		6328073817FD26080030F4C9 /* libopencv_video.2.4.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_video.2.4.6.dylib; sourceTree = "<group>"; };
+		6328073A17FD26390030F4C9 /* libopencv_highgui.2.4.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_highgui.2.4.6.dylib; sourceTree = "<group>"; };
+		6328073C17FD27480030F4C9 /* libopencv_imgproc.2.4.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgproc.2.4.6.dylib; sourceTree = "<group>"; };
+		6328073E17FD36BC0030F4C9 /* pingpongtable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pingpongtable.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6328073917FD26080030F4C9 /* libopencv_video.2.4.6.dylib in Frameworks */,
+				6328073617FD25EF0030F4C9 /* libopencv_core.2.4.6.dylib in Frameworks */,
+				6328073B17FD26390030F4C9 /* libopencv_highgui.2.4.6.dylib in Frameworks */,
+				6328073D17FD27480030F4C9 /* libopencv_imgproc.2.4.6.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,10 @@
 		6328071F17FD16AB0030F4C9 = {
 			isa = PBXGroup;
 			children = (
+				6328073C17FD27480030F4C9 /* libopencv_imgproc.2.4.6.dylib */,
+				6328073A17FD26390030F4C9 /* libopencv_highgui.2.4.6.dylib */,
+				6328073817FD26080030F4C9 /* libopencv_video.2.4.6.dylib */,
+				6328073417FD25EF0030F4C9 /* libopencv_core.2.4.6.dylib */,
 				6328072A17FD16AB0030F4C9 /* CornerDetectTest */,
 				6328072917FD16AB0030F4C9 /* Products */,
 			);
@@ -60,6 +77,7 @@
 		6328072A17FD16AB0030F4C9 /* CornerDetectTest */ = {
 			isa = PBXGroup;
 			children = (
+				6328073E17FD36BC0030F4C9 /* pingpongtable.jpg */,
 				6328072B17FD16AB0030F4C9 /* main.cpp */,
 				6328072D17FD16AB0030F4C9 /* CornerDetectTest.1 */,
 			);
@@ -195,6 +213,12 @@
 		6328073217FD16AB0030F4C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/David/Desktop/CornerDetectTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -202,6 +226,12 @@
 		6328073317FD16AB0030F4C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/David/Desktop/CornerDetectTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
