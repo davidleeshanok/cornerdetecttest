@@ -31,6 +31,7 @@ void drawOnImage(cv::Mat &image,
 
 int main(int argc, const char * argv[])
 {
+    //Test
     cv::Mat tableImage;
     cv::Mat unconvertedTableImage;
     cv::Mat channelTableImage;
